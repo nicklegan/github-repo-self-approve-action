@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Self-Approve Action
-        uses: nicklegan/github-repo-self-approve-action@v1.0.0
+        uses: nicklegan/github-repo-self-approve-action@v1.0.1
         if: github.actor == 'your-username'
         with:
           appid: ${{ secrets.APPID }}
